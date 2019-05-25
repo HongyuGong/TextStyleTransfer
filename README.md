@@ -1,11 +1,16 @@
 This is implementation for the paper "Reinforcement Learning Based Text Style Transfer without Parallel Training Corpus" accepted by NAACL 2019.
 
+* Add folder
+Create folder data/, dump/, model/ and pretrained_model/ in the same level of src/
+
+
 * Data prep
 Put data to data_folder
 - data_folder: ../data/[data_type]/
 - data_type: yelp/gyafc_family
 - Put train/dev/test corpus in original/target style as corpus.(train/dev/test).(orig/tsf)
 Put pretrained embedding in text format to the path of embed_fn
+
 
 * Running instructions
 1. Data processing
