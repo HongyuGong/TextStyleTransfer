@@ -62,6 +62,9 @@ CUDA_VISIBLE_DEVICES=2 python3 style_transfer_test.py --data_type yelp
 - MODEL_PATH: ../model/[DATA_TYPE]/model
 - OUTPUT_PATH: the path where transferred sentences are saved
 
+
+In reinforcement learning, we use a combination rewards from style, semantic discriminator and language model as the training reward. You may want to change style_weight, semantic_weight and lm_weight in params.py to tune the model. The larger the weight is, the more dominant the corresponding metric is.
+
 If you're considering using our code, please cite our paper:
 
 @article{gong2019reinforcement,
