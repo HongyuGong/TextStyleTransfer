@@ -198,7 +198,7 @@ def pretrainGenerator(sess, generator, tsf_encoder_sents, tsf_encoder_sent_len, 
                                                                                                          avg_dev_lm_reward, avg_dev_reward))
                                                                                                          
             # save best model
-            if (avg_dev_style_reward >= 0.8 and avg_dev_sem_reward > best_dev_reward):
+            if (avg_dev_style_reward >= 0.7 and avg_dev_sem_reward > best_dev_reward):
                 best_dev_reward = avg_dev_sem_reward
                 print("best dev reward: {}".format(best_dev_reward))
                 saver.save(sess, model_save_path)               
