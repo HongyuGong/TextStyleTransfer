@@ -67,6 +67,9 @@ Hypeparameters:
 
 In reinforcement learning, we use a combination rewards from style, semantic discriminator and language model as the training reward. You may want to change style_weight, semantic_weight and lm_weight in params.py to tune the model. The larger the weight is, the more dominant the corresponding metric is.
 
+Also, both pretrain.py and style_transfer_RL.py enable model selection, the default method in the implementation is to select the model with the highest semantic reward with a preset style threshold. You may want to try other methods for model selection.
+
+-----------------------------------------------------------------------------------------------------------------------
 If you're considering using our code, please cite our paper:
 
 @article{gong2019reinforcement,
